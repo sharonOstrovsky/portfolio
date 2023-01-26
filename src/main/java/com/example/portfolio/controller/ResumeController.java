@@ -6,17 +6,12 @@ import org.springframework.web.bind.annotation.GetMapping;
 @Controller
 public class ResumeController {
 
-    @GetMapping("/resume/index")
-    public String index(){
-        return "index.html";
-    }
-
-    @GetMapping("/sharon/cv")
+    @GetMapping("/cv")
     public String resume(){
         return "resume.html";
     }
 
-    @GetMapping("/sharon")
+    @GetMapping({"/","/index"})
     public String presentacion(){
         return "presentacion.html";
     }
