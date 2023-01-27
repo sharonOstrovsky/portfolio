@@ -6,7 +6,7 @@ import org.springframework.web.bind.annotation.GetMapping;
 @Controller
 public class ResumeController {
 
-    @GetMapping("/cv")
+    @GetMapping("/resume")
     public String resume(){
         return "resume.html";
     }
